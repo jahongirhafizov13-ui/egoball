@@ -560,7 +560,7 @@
 
 /* ============================= REALTIME (Socket.io) ============================= */
 // Point this at your deployed server when you move off localhost.
-const SERVER_URL = 'https://unless-earthlike-matted.ngrok-free.dev -> http://localhost:3000';
+const SERVER_URL = 'https://unless-earthlike-matted.ngrok-free.dev';
 const socket = io(SERVER_URL, { autoConnect: true });
 let socketReady = false;
 socket.on('connect', ()=>{ socketReady = true; });
