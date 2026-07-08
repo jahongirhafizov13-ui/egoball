@@ -1,0 +1,15 @@
+{
+  "name": "egoball-server",
+  "version": "2.0.0",
+  "description": "Realtime Socket.io server for EgoBall multiplayer, with persistent accounts and hub chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "bcryptjs": "^2.4.3",
+    "mongodb": "^6.9.0"
+  }
+}
