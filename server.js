@@ -31,7 +31,7 @@ app.use('/auras', express.static(path.join(__dirname, 'auras')));
 // `client/` folder placed next to this server.js. Visiting your VPS's
 // address in a browser (http://YOUR-VPS-IP:3000/) loads the whole game -
 // no separate web server needed, and no more file:// issues.
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname)));
 
 const server = http.createServer(app);
 const io = new Server(server, {
