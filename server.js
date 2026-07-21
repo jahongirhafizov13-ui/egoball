@@ -16,9 +16,10 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: '*' } });
 
-app.use(express.static(path.join(__dirname, '..', 'client')));
+app.use(express.static(__dirname));
 
-const rooms = new RoomManager(io);
+
+st rooms = new RoomManager(io);
 
 // simple per-socket rate limit for chatty events (input is exempt - it's just
 // booleans and needs to feel instant, but auth/room actions are rate-limited
